@@ -1,0 +1,151 @@
+.course-lists {
+    --columns: 3;
+    --spacing: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+    row-gap: var(--spacing);
+    margin-bottom: 60px;
+}
+
+.course-item {
+    width: calc(100% / var(--columns) - var(--spacing));
+    margin-left: var(--spacing);
+    display: flex;
+    flex-direction: column;
+}
+
+.course-item:hover .course-thumb {
+    transform: scale(1.1);
+}
+
+.sale {
+    position: relative;
+    overflow: hidden;
+}
+
+.sale::before {
+    content: "\e0b7";
+    font-family: "Font Awesome 7 Free";
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+    background: var(--primary-color);
+    position: absolute;
+    right: -40px;
+    top: -15px;
+    rotate: 45deg;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 4px;
+}
+
+.course-img {
+    aspect-ratio: 1 / 0.8;
+    overflow: hidden;
+}
+
+.course-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1s ease;
+}
+
+.course {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+}
+
+.course-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gray-color);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-title a {
+    color: var(--gray-color);
+}
+
+.course-title a:hover,
+.course-item:hover .course-title a {
+    color: var(--primary-color);
+}
+
+.course-desc {
+    color: var(--gray-color);
+    margin: 20px 0;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.course-info div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-info p,
+.course-info i {
+    font-size: 1.5rem;
+    color: var(--gray-color);
+}
+
+.course-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reg-btn {
+    padding: 6px 15px;
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition: var(--transition);
+    margin-left: auto;
+}
+
+.reg-btn:hover {
+    transform: translateY(-8px);
+}
+
+.buy-btn {
+    background: var(--primary-color);
+    font-weight: 700;
+}
+
+.free-btn {
+    background: var(--secondary-color);
+}

@@ -1,0 +1,156 @@
+/* Header CSS */
+.header {
+    background: url(../img/img-banner.webp) no-repeat center;
+    background-size: cover;
+    height: 495px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--heading-font);
+}
+
+.header-wrapper a {
+    color: var(--white);
+}
+
+.breadcrumb a:hover {
+    color: var(--secondary-color);
+}
+
+.nav {
+    padding: 40px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-lists {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-lists a {
+    padding: 10px 20px;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-act-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* Footer CSS */
+.footer {
+    background: #151515;
+    padding: 80px 0 160px 0;
+    color: var(--border-color);
+}
+
+.footer p {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.footer h2 {
+    margin: 8px 0 25px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-subscribe {
+    width: 270px;
+}
+
+.app {
+    display: flex;
+    gap: 20px;
+}
+
+.app a {
+    flex-grow: 1;
+}
+
+.app img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-services {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex-grow: 1;
+    flex-basis: 33.333%;
+    flex-shrink: 0;
+}
+
+.service li {
+    padding: 10px 0;
+}
+
+.service a {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.service a:hover {
+    color: var(--primary-color);
+}
+
+.form-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-subscribe input {
+    height: 36px;
+    padding: 0 20px;
+    border-radius: 20px;
+    background: #272727;
+    color: #fff9;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.form-subscribe button {
+    min-width: 90px;
+    padding: 8px;
+    background: var(--primary-color);
+    border-radius: 25px;
+    color: var(--white);
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+}
+
+.form-subscribe button:hover {
+    color: var(--primary-color);
+    background: var(--white);
+}
