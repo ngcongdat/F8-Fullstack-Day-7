@@ -3,9 +3,801 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Scholars</title>
+        <title>Scholars Homepage</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome CSS -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/header-footer.css" />
+        <link rel="stylesheet" href="./css/homepage.css" />
+        <link rel="stylesheet" href="./css/courses-layout.css" />
     </head>
     <body>
-        <a href="./courses.html">Courses</a>
+        <div class="wrapper">
+            <header class="homepage-header">
+                <div class="opacity">
+                    <div class="container header-wrapper">
+                        <nav class="nav">
+                            <a class="logo" href="./index.html">
+                                <img src="./img/img-logo.webp" alt="Logo"
+                            /></a>
+                            <ul class="nav-lists">
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./courses.html">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Pages</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-act-btn">
+                                <button class="nav-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button class="nav-btn">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="hero">
+                            <p>Get Educated with the best teachers</p>
+                            <h1>EDUCATION IS THE BACKBONE<br />OF A NATION</h1>
+                            <div class="hero-btn">
+                                <a
+                                    href="./courses.html"
+                                    class="primary-hover-btn"
+                                    >Our Courses</a
+                                >
+                                <a href="#!" class="primary-hover-btn"
+                                    >Enroll Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Start Feature -->
+            <div class="feature-wrapper">
+                <div class="container feature-lists">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <strong>20 Million Students Served</strong>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        <strong>Over 1000+ Courses for you</strong>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fa-solid fa-laptop-file"></i>
+                        <strong>Learn anywhere in this world</strong>
+                    </div>
+                </div>
+            </div>
+            <!-- End Feature -->
+
+            <!-- Start Find Course -->
+            <div class="find-course-wrapper">
+                <div class="opacity">
+                    <div class="container find-course">
+                        <div class="theme-title">
+                            <h2>Find the Best Courses</h2>
+                            <p>
+                                Find your preferred course from our wide range
+                                of courses easily, with just a one search here
+                            </p>
+                        </div>
+                        <form action="" class="find-course-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="Course Name"
+                                    class="form-input"
+                                />
+                                <select
+                                    name="course-category"
+                                    id="course-category"
+                                    class="form-input"
+                                >
+                                    <option value="0">Course Categories</option>
+                                    <option value="1">Course Demo one</option>
+                                    <option value="2">Course Demo one</option>
+                                    <option value="2">Course Demo one</option>
+                                </select>
+                                <select
+                                    name="course-level"
+                                    id="course-level"
+                                    class="form-input"
+                                >
+                                    <option value="0">Course Level</option>
+                                    <option value="1">Course Level one</option>
+                                    <option value="2">Course Level one</option>
+                                    <option value="2">Course Level one</option>
+                                </select>
+                                <select
+                                    name="course-instructor"
+                                    id="course-instructor"
+                                    class="form-input"
+                                >
+                                    <option value="0">
+                                        Course Instructors
+                                    </option>
+                                    <option value="1">
+                                        Course Instructors one
+                                    </option>
+                                    <option value="2">
+                                        Course Instructors one
+                                    </option>
+                                    <option value="2">
+                                        Course Instructors one
+                                    </option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="primary-hover-btn">
+                                Search Course
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Find Course -->
+
+            <!-- Start Feature Course -->
+            <div class="main-courses-wrapper">
+                <div class="container">
+                    <div class="theme-title">
+                        <h2>Our Featured Courses</h2>
+                        <p>
+                            Choose the course you need from our wide range of
+                            courses online, start learning today from the best
+                            teachers
+                        </p>
+                    </div>
+
+                    <div class="course-lists">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >Introduction to PHP language with Ajax
+                                        & Redux</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-1.webp"
+                                            alt=""
+                                        />
+                                        <p>Chris</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>575</p>
+                                    </div>
+                                    <button class="reg-btn free-btn">
+                                        FREE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course-3.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >Introduction to the Laravel Language
+                                        with Redux Framework</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-3.webp"
+                                            alt=""
+                                        />
+                                        <p>Kate</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>620</p>
+                                    </div>
+                                    <button class="reg-btn buy-btn">$39</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-img sale">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course-2.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >Essentials of Graphic Designing using
+                                        Adobe Photoshop</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-2.webp"
+                                            alt=""
+                                        />
+                                        <p>Sarah</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>1575</p>
+                                    </div>
+                                    <button class="reg-btn buy-btn">$29</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >Photography Masterclass: Complete guide
+                                        to Photography</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-1.webp"
+                                            alt=""
+                                        />
+                                        <p>David</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>195</p>
+                                    </div>
+                                    <button class="reg-btn free-btn">
+                                        FREE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-img sale">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course-2.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >iOS8 App Development with Swift 1
+                                        Essential Training</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-2.webp"
+                                            alt=""
+                                        />
+                                        <p>Riyad</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>5575</p>
+                                    </div>
+                                    <button class="reg-btn buy-btn">$19</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="#!"
+                                    ><img
+                                        src="./img/img-course-3.webp"
+                                        alt=""
+                                        class="course-thumb"
+                                /></a>
+                            </div>
+                            <div class="course">
+                                <h2 class="course-title">
+                                    <a href="#!"
+                                        >Programming for everybody: Getting
+                                        started with Python</a
+                                    >
+                                </h2>
+                                <p class="course-desc">
+                                    In this course, you will learn the of PHP
+                                    Framework and Ajax. This course will build
+                                    your foundation.
+                                </p>
+                                <div class="course-info">
+                                    <div>
+                                        <img
+                                            src="./img/img-author-3.webp"
+                                            alt=""
+                                        />
+                                        <p>Milon</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <p>575</p>
+                                    </div>
+                                    <button class="reg-btn buy-btn">$39</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="primary-hover-btn all-cource-btn">
+                        ALL COURSES
+                    </button>
+                </div>
+            </div>
+            <!-- End Feature Course -->
+
+            <!-- Start Signup Section -->
+            <div class="sign-up-wrapper">
+                <div class="container">
+                    <div class="theme-title">
+                        <h2>Ready to take your Skills to the next Level?</h2>
+                        <p>
+                            Start learning the skills that you need, start your
+                            free trial today
+                        </p>
+                    </div>
+                    <div class="sign-up-btn">
+                        <a href="#!">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Signup Section -->
+
+            <!-- Start Plan Section -->
+            <div class="plan-wrapper">
+                <div class="container">
+                    <div class="theme-title">
+                        <h2>Choose the plan you need</h2>
+                        <p>
+                            Pick the plan you ned, we have a wide range of
+                            pricing option to suit your needs, get started today
+                        </p>
+                    </div>
+                    <div class="plans">
+                        <div class="plan">
+                            <h3>STARTER</h3>
+                            <strong>19</strong>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="plan-btn">Start Now</a>
+                        </div>
+
+                        <div class="plan">
+                            <h3>GROWTH</h3>
+                            <strong>29</strong>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="plan-btn">Start Now</a>
+                        </div>
+
+                        <div class="plan">
+                            <h3>PREMIUM</h3>
+                            <strong>49</strong>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="plan-btn">Start Now</a>
+                        </div>
+
+                        <div class="plan">
+                            <h3>ENTERPRISE</h3>
+                            <strong>79</strong>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="plan-btn">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Plan Section -->
+
+            <!-- Start Testimonial Section -->
+            <div class="testimonial-wrapper">
+                <div class="container">
+                    <div class="theme-title">
+                        <h2>Testimonial</h2>
+                        <p>
+                            What our valuable clients have to say about our
+                            courses, tutorials and online classes
+                        </p>
+                    </div>
+                    <div class="testimonial-items">
+                        <div class="testimonial-item">
+                            <img src="./img/ava-testimonial-1.webp" alt="" />
+                            <h3>Riyad Lawrence</h3>
+                            <p>CEO</p>
+                            <p>
+                                Scholars website is a great way of learning new
+                                things, I love their courses.
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="./img/ava-testimonial-2.webp" alt="" />
+                            <h3>Milon Sayfur</h3>
+                            <p>CEO</p>
+                            <p>
+                                Scholars website is a great way of learning new
+                                things, I love their courses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Testimonial Section -->
+
+            <!-- Start Last New Section -->
+            <div class="news-wrapper">
+                <div class="container">
+                    <div class="theme-title">
+                        <h2>Latest News</h2>
+                        <p>
+                            Want to keep up with the latest news of Scholars?
+                            Check out all the latest news of ours here
+                        </p>
+                    </div>
+                    <div class="news-group">
+                        <div class="news-item">
+                            <div class="thumb-wrapper">
+                                <img src="./img/img-news-1.webp" alt="" />
+                            </div>
+                            <div class="news-info">
+                                <h3 class="news-title">
+                                    <a href="#!"
+                                        >How one of our students empowering
+                                        Entrepreneurship.</a
+                                    >
+                                </h3>
+                                <div class="news-meta">
+                                    <div>
+                                        <i class="fa fa-calendar"></i>
+                                        <a href="#!">March, 10, 2017</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <a href="#!">Michael</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comments"></i>
+                                        <a href="#!">10</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-heart"></i>
+                                        <a href="#!">50</a>
+                                    </div>
+                                </div>
+                                <p class="news-desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on
+                                    Coursera, she was working as a
+                                    Communications Manager for a bank in France
+                                    and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="read-more">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="thumb-wrapper">
+                                <img src="./img/img-news-2.webp" alt="" />
+                            </div>
+                            <div class="news-info">
+                                <h3 class="news-title">
+                                    <a href="#!"
+                                        >Learner story: How I became a Data
+                                        Scientist by taking the courses.</a
+                                    >
+                                </h3>
+                                <div class="news-meta">
+                                    <div>
+                                        <i class="fa fa-calendar"></i>
+                                        <a href="#!">March, 10, 2017</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <a href="#!">Michael</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comments"></i>
+                                        <a href="#!">10</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-heart"></i>
+                                        <a href="#!">50</a>
+                                    </div>
+                                </div>
+                                <p class="news-desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on
+                                    Coursera, she was working as a
+                                    Communications Manager for a bank in France
+                                    and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="read-more">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="thumb-wrapper">
+                                <img src="./img/img-news-3.webp" alt="" />
+                            </div>
+                            <div class="news-info">
+                                <h3 class="news-title">
+                                    <a href="#!"
+                                        >Making the leap from data science to a
+                                        great professional?</a
+                                    >
+                                </h3>
+                                <div class="news-meta">
+                                    <div>
+                                        <i class="fa fa-calendar"></i>
+                                        <a href="#!">March, 10, 2017</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-user"></i>
+                                        <a href="#!">Michael</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comments"></i>
+                                        <a href="#!">10</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-heart"></i>
+                                        <a href="#!">50</a>
+                                    </div>
+                                </div>
+                                <p class="news-desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on
+                                    Coursera, she was working as a
+                                    Communications Manager for a bank in France
+                                    and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="read-more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Last New Section -->
+
+            <!-- Start Instructors Section -->
+            <div class="instructor-wrapper">
+                <div class="instructor-banner"></div>
+                <div class="instructor-info">
+                    <h2>Become an Instructor</h2>
+                    <p>
+                        Be a part of the world class institution where we make
+                        leaders. Make a difference in the world by taking the
+                        responsibility. Be different.
+                    </p>
+                    <a href="#!">Learn More</a>
+                </div>
+            </div>
+            <!-- End Instructors Section -->
+
+            <!-- Start Partner Section -->
+            <div class="partner-wrapper">
+                <div class="container">
+                    <div class="partner-logos">
+                        <div class="partner">
+                            <img src="./img/img-partner-1.webp" alt="" />
+                        </div>
+                        <div class="partner">
+                            <img src="./img/img-partner-2.webp" alt="" />
+                        </div>
+                        <div class="partner">
+                            <img src="./img/img-partner-3.webp" alt="" />
+                        </div>
+                        <div class="partner">
+                            <img src="./img/img-partner-4.webp" alt="" />
+                        </div>
+                        <div class="partner">
+                            <img src="./img/img-partner-5.webp" alt="" />
+                        </div>
+                        <div class="partner">
+                            <img src="./img/img-partner-6.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Partner Section -->
+
+            <!-- Start Foooter -->
+            <footer class="footer">
+                <div class="footer-wrapper container">
+                    <div class="footer-info">
+                        <a href="./index.html"
+                            ><img src="./img/img-logo.webp" alt=""
+                        /></a>
+                        <p>
+                            Scholars provides universal access to the world’s
+                            best education, partnering with top universities and
+                            organizations to offer courses online.
+                        </p>
+                        <p>© 2017 Scholrs Inc. All rights reserved.</p>
+                        <div class="app">
+                            <a href="#!"
+                                ><img src="./img/img-android.webp" alt=""
+                            /></a>
+                            <a href="#!"
+                                ><img src="./img/img-apple.webp" alt=""
+                            /></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-services">
+                        <div class="service">
+                            <h2>Scholars</h2>
+                            <ul>
+                                <li><a href="#!">About Us</a></li>
+                                <li><a href="#!">Leadership</a></li>
+                                <li><a href="#!">Careers</a></li>
+                                <li><a href="#!">FAQ</a></li>
+                                <li><a href="#!">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <h2>Product</h2>
+                            <ul>
+                                <li><a href="#!">Education Light</a></li>
+                                <li><a href="#!">Eucation Starter</a></li>
+                                <li><a href="#!">Eucation Premium</a></li>
+                                <li><a href="#!">Business</a></li>
+                                <li><a href="#!">Business Plus</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <h2>Support</h2>
+                            <ul>
+                                <li><a href="#!">Support</a></li>
+                                <li><a href="#!">Toll Free Number</a></li>
+                                <li><a href="#!">Open Ticket</a></li>
+                                <li><a href="#!">System Requirements</a></li>
+                                <li><a href="#!">Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h2>Subscribe Us</h2>
+                        <p>Subscribe us to get all the latest news from us</p>
+                        <form action="" class="form-subscribe">
+                            <input
+                                placeholder="Your Email..."
+                                type="email"
+                                name="email"
+                                id="email"
+                            />
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Foooter -->
+        </div>
     </body>
 </html>
