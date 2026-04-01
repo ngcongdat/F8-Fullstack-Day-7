@@ -93,7 +93,7 @@
 }
 
 .find-course-form button,
-.all-cource-btn {
+.all-course-btn {
     display: block;
     margin: 50px auto 0;
     padding: 12px 24px;
@@ -101,12 +101,12 @@
     border-radius: 25px;
 }
 
-.all-cource-btn:hover {
+.all-course-btn:hover {
     border: 1px solid var(--primary-color);
 }
 
 .form-group {
-    --colums: 4;
+    --columns: 4;
     --spacing: 30px;
 
     display: flex;
@@ -117,12 +117,12 @@
 
 .form-input {
     padding: 15px 20px;
-    flex-basis: calc(100% / var(--colums) - var(--spacing));
+    flex-basis: calc(100% / var(--columns) - var(--spacing));
     margin-left: var(--spacing);
     border-radius: 30px;
 }
 
-.all-cource-btn {
+.all-course-btn {
     margin: 45px auto 100px;
     text-transform: uppercase;
 }
@@ -160,7 +160,7 @@
 }
 
 .plans {
-    --colums: 4;
+    --columns: 4;
     --spacing: 30px;
 
     display: flex;
@@ -170,7 +170,7 @@
 }
 
 .plan {
-    flex-basis: calc(100% / var(--colums) - var(--spacing));
+    flex-basis: calc(100% / var(--columns) - var(--spacing));
     margin-left: var(--spacing);
     color: var(--gray-color);
     padding: 25px 5px;
@@ -292,7 +292,7 @@
 }
 
 .news-group {
-    --colums: 3;
+    --columns: 3;
     --spacing: 30px;
 
     display: flex;
@@ -303,7 +303,7 @@
 
 .news-item {
     flex: 1;
-    width: calc(100% / var(--colums) - var(--spacing));
+    width: calc(100% / var(--columns) - var(--spacing));
     margin-left: var(--spacing);
 }
 
